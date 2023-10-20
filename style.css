@@ -104,13 +104,24 @@ body{
 }
 .btn-1{
     display: inline-block;
-    padding: 5px 15px;
-    background-color: #ab9df8;
-    color:#000e05;
+    padding: 10px 20px;
+    color: #000e05; /* Cambia el color del texto al botón */
+    font-size: 16px;
+    text-decoration: none;
     text-transform: uppercase;
+    background: rgba(198, 159, 250, 0.5); /* Cambia el color de fondo al botón */
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(247, 243, 44, 0.6); /* Aplica una sombra similar */
+    border-radius: 10px; /* Aplica un borde redondeado similar */
+    overflow: hidden;
+    transition: background 0.3s, color 0.3s;
+    letter-spacing: 4px;
+    position: relative;
 }
 .btn-1:hover{
-    background-color: rgb(40, 5, 122);
+    background: #ab9df8; /* Cambia el color de fondo al pasar el mouse, similar al botón "Submit" */
+    color: #000e05; /* Cambia el color del texto al pasar el mouse */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6), 0 0 25px rgba(0, 0, 0, 0.6), 0 0 50px rgba(0, 0, 0, 0.6), 0 0 100px rgba(0, 0, 0, 0.6);
 }
 
 .patita{
