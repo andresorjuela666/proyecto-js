@@ -105,30 +105,41 @@ body{
 .btn-1{
     display: inline-block;
     padding: 10px 20px;
-    color: #000e05; /* Cambia el color del texto al botón */
+    color: #000e05;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
-    background: rgba(198, 159, 250, 0.5); /* Cambia el color de fondo al botón */
+    background: rgba(198, 159, 250, 0.5);
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(247, 243, 44, 0.6); /* Aplica una sombra similar */
-    border-radius: 10px; /* Aplica un borde redondeado similar */
+    box-shadow: 0 15px 25px rgba(247, 243, 44, 0.6);
+    border-radius: 10px;
     overflow: hidden;
     transition: background 0.3s, color 0.3s;
     letter-spacing: 4px;
     position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
 }
 .btn-1:hover{
-    background: #ab9df8; /* Cambia el color de fondo al pasar el mouse, similar al botón "Submit" */
-    color: #000e05; /* Cambia el color del texto al pasar el mouse */
+    transform: translateY(-5px) rotateX(-20deg);
+    background: #ab9df8;
+    color: #000e05;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6), 0 0 25px rgba(0, 0, 0, 0.6), 0 0 50px rgba(0, 0, 0, 0.6), 0 0 100px rgba(0, 0, 0, 0.6);
 }
 
-.patita{
-    padding: 10% 0;
-    background-color: #fffdfc;
-    position: relative;
+.patita{    background: linear-gradient(
+    rgba(0, 0, 0, 0.0),
+    rgba(0, 0, 0, 0.0)),
+    url("images/producto.jpg");
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
 }
+
 .patita-content{
     text-align: center;
 }
@@ -232,6 +243,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
+
 }
 .general-3{
         background-image: url(images/general-3.jpg);
@@ -268,7 +280,7 @@ p{
     flex: 1;
     padding: 15px 55px;
     text-align: center;
-}
+    }
 .blog-1 img{
     width: 10%;
     border-radius: 15px;
